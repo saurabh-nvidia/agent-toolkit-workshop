@@ -1,0 +1,101 @@
+
+### baseline: always STRONG (550B)
+   [ 1/20] L1    1328ms
+   [ 2/20] L1     901ms
+   [ 3/20] L1     260ms
+   [ 4/20] L1   23387ms
+   [ 5/20] L1   15046ms
+   [ 6/20] L2     709ms
+   [ 7/20] L2   23695ms
+   [ 8/20] L2     709ms
+   [ 9/20] L2   30322ms
+   [10/20] L2    2251ms
+   [11/20] L3    2433ms
+   [12/20] L3     232ms
+   [13/20] L3    1279ms
+   [14/20] L3    4153ms
+   [15/20] L3     310ms
+   [16/20] L4   14138ms
+   [17/20] L4    2119ms
+   [18/20] L4     241ms
+   [19/20] L4    3351ms
+   [20/20] L4    1356ms
+
+### baseline: always WEAK (30B)
+   [ 1/20] L1     601ms
+   [ 2/20] L1    1424ms
+   [ 3/20] L1    1394ms
+   [ 4/20] L1    1669ms
+   [ 5/20] L1     945ms
+   [ 6/20] L2     505ms
+   [ 7/20] L2     767ms
+   [ 8/20] L2     597ms
+   [ 9/20] L2    1614ms
+   [10/20] L2     622ms
+   [11/20] L3    1280ms
+   [12/20] L3    9147ms
+   [13/20] L3    1292ms
+   [14/20] L3    1293ms
+   [15/20] L3     582ms
+   [16/20] L4     763ms
+   [17/20] L4     544ms
+   [18/20] L4    1244ms
+   [19/20] L4     907ms
+   [20/20] L4    3994ms
+
+### routed: judge = Lightning 30B
+   [ 1/20] L1 expect=weak   got=weak      1783ms
+   [ 2/20] L1 expect=weak   got=weak      2425ms
+   [ 3/20] L1 expect=weak   got=weak      2670ms
+   [ 4/20] L1 expect=weak   got=weak      2679ms
+   [ 5/20] L1 expect=weak   got=weak      4882ms
+   [ 6/20] L2 expect=weak   got=strong    3359ms
+   [ 7/20] L2 expect=weak   got=weak      1130ms
+   [ 8/20] L2 expect=weak   got=None       252ms
+   [ 9/20] L2 expect=weak   got=None       254ms
+   [10/20] L2 expect=weak   got=None      1080ms
+   [11/20] L3 expect=strong got=strong   14439ms
+   [12/20] L3 expect=strong got=strong   26762ms
+   [13/20] L3 expect=strong got=strong    1869ms
+   [14/20] L3 expect=strong got=strong   11888ms
+   [15/20] L3 expect=strong got=strong    4090ms
+   [16/20] L4 expect=strong got=strong    4897ms
+   [17/20] L4 expect=strong got=strong    2932ms
+   [18/20] L4 expect=strong got=strong    5004ms
+   [19/20] L4 expect=strong got=strong   35722ms
+   [20/20] L4 expect=strong got=strong    4338ms
+
+### routed: judge = Nemotron Mini 4B
+   [ 1/20] L1 expect=weak   got=strong    5603ms
+   [ 2/20] L1 expect=weak   got=None       351ms
+   [ 3/20] L1 expect=weak   got=strong    1665ms
+   [ 4/20] L1 expect=weak   got=strong   26542ms
+   [ 5/20] L1 expect=weak   got=strong     837ms
+   [ 6/20] L2 expect=weak   got=strong   13164ms
+   [ 7/20] L2 expect=weak   got=strong    1235ms
+   [ 8/20] L2 expect=weak   got=strong    1940ms
+   [ 9/20] L2 expect=weak   got=strong     944ms
+   [10/20] L2 expect=weak   got=None       348ms
+   [11/20] L3 expect=strong got=strong    3490ms
+   [12/20] L3 expect=strong got=strong   34095ms
+   [13/20] L3 expect=strong got=strong     788ms
+   [14/20] L3 expect=strong got=strong    4248ms
+   [15/20] L3 expect=strong got=strong   27994ms
+   [16/20] L4 expect=strong got=strong    2074ms
+   [17/20] L4 expect=strong got=strong    3542ms
+   [18/20] L4 expect=strong got=strong    1567ms
+   [19/20] L4 expect=strong got=strong    2967ms
+   [20/20] L4 expect=strong got=strong    2125ms
+
+
+========================================================================================================
+config                               p50 ms   p95 ms  overhead p50   weak/strong   accuracy
+--------------------------------------------------------------------------------------------------------
+baseline: always STRONG (550B)         2119    23695             0             -          -
+baseline: always WEAK (30B)            1244     3994             0             -          -
+routed: judge = Lightning 30B          3359    26762          2113          6/11        80%
+routed: judge = Nemotron Mini 4B       2125    27994           122          0/18        50%
+========================================================================================================
+
+saved /tmp/bench_results.json
+workshop-cpu
