@@ -1,4 +1,18 @@
-"""Builds the the audience workshop notebook: NVIDIA Agent Toolkit levers on an existing agent."""
+"""HISTORICAL — this generated the first version of agent_workshop.ipynb.
+
+    NOT the source of truth. Do not run it.
+
+The notebook was originally built programmatically because it was churning heavily
+during development — sections renumbered, framing rewritten, models swapped — and
+bulk edits against raw .ipynb JSON are error-prone.
+
+That phase is over. **notebook/agent_workshop.ipynb is now the source of truth.**
+Edit it in Jupyter like any other notebook.
+
+Running this file would overwrite the notebook and silently discard any edits made
+since. It is kept only to show how the original was constructed.
+"""
+
 import json
 
 C = []

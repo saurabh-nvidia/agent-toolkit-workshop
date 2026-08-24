@@ -83,8 +83,7 @@ agent-toolkit-workshop/
 ├── LAUNCHABLE_CONFIG.md       this file
 ├── setup.sh                   Launchable setup script
 ├── notebook/
-│   ├── agent_workshop.ipynb  the workshop
-│   └── build_nb.py            generator - edit this, not the .ipynb
+│   └── agent_workshop.ipynb  the workshop - edit this directly
 ├── benchmark/
 │   ├── bench.py               routing benchmark (~35 min)
 │   └── BENCHMARK_NOTES.md     results and method

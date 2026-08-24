@@ -37,15 +37,18 @@ fresh machine takes 2–5 minutes to become ready.
 ## What is in here
 
 ```
-notebook/     the workshop notebook, and the generator that produces it
+notebook/     the workshop notebook — edit this directly
 benchmark/    routing-overhead benchmark, results and method
 optional/     running the same notebook against your own GPU
-docs/         working notes, findings, and a minimal Relay proof script
+docs/         a minimal Relay proof script, and the original generator (historical)
 setup.sh      the Launchable setup script (runs at first boot)
 ```
 
-**Edit `notebook/build_nb.py`, not the `.ipynb`.** The notebook is generated; regenerate
-with `python3 build_nb.py`.
+`notebook/agent_workshop.ipynb` is the source of truth — edit it in Jupyter like any other
+notebook.
+
+`docs/build_nb_ORIGINAL.py` generated the first version and is kept for provenance only.
+**Do not run it** — it would overwrite the notebook and discard any edits since.
 
 ---
 
