@@ -13,7 +13,7 @@ set -uo pipefail
 
 # Set this before publishing the Launchable. Used only as a fallback, if Brev has
 # not already cloned the repo by the time this script runs.
-WORKSHOP_REPO_URL="${WORKSHOP_REPO_URL:-https://github.com/CHANGE-ME/agent-toolkit-workshop}"
+WORKSHOP_REPO_URL="${WORKSHOP_REPO_URL:-https://github.com/saurabh-nvidia/agent-toolkit-workshop}"
 
 USER_HOME="${HOME:-/home/ubuntu}"
 LOG="$USER_HOME/workshop_setup.log"

@@ -36,7 +36,7 @@ about **$0.25/hr per attendee**.
 
 | Field | Value |
 |---|---|
-| Repo URL | `https://github.com/<your-org>/agent-toolkit-workshop` |
+| Repo URL | `https://github.com/saurabh-nvidia/agent-toolkit-workshop` |
 | Branch | `main` |
 
 The setup script expects the repo to be cloned into the home directory and will symlink

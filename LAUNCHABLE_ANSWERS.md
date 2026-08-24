@@ -2,9 +2,7 @@
 
 Fill in at https://brev.nvidia.com/launchables/create
 
-> ⚠️ Two things first:
-> 1. Push this repo to GitHub (must be **public**) and note the URL.
-> 2. Edit line 16 of `setup.sh` — it still says `CHANGE-ME`.
+> ⚠️ Push this repo to GitHub first — Brev requires a **public** repository URL.
 
 ---
 
@@ -44,7 +42,7 @@ Runs on CPU; no GPU required. ~60 minutes.
 | Field | Value |
 |---|---|
 | Source | Git repository |
-| URL | `https://github.com/<your-org>/agent-toolkit-workshop` |
+| URL | `https://github.com/saurabh-nvidia/agent-toolkit-workshop` |
 | Branch | `main` |
 
 Brev requires a **public** repo: *"Provide a public repository, notebook, or Markdown file URL."*
