@@ -1,6 +1,9 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # ---------------------------------------------------------------------------
 # Brev Launchable setup — NVIDIA Agent Toolkit workshop
+#
+# Shebang must be literally #!/bin/bash — the Brev Launchable console rejects
+# #!/usr/bin/env bash. Identical behaviour on the Ubuntu images Brev uses.
 #
 # Runs once at first boot on a fresh CPU VM. Installs everything the notebook
 # needs and registers a Jupyter kernel carrying the attendee's API key, so the
